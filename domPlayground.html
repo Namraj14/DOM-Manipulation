@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="DOM Playground">
+        <lightning-input class="name-input" label="Name" onchange={handleNameChange} value={name}></lightning-input>
+        
+        <lightning-button label="Update Text" onclick={updateText}></lightning-button>
+        <lightning-button label="Style Text" onclick={styleText}></lightning-button>
+        
+        <p class="output-text">This text will change and be styled</p>
+
+        <div class="slds-m-top_medium">
+            <template for:each={fruits} for:item="fruit">
+                 <p key={fruit.id} class="fruit-item" data-id={fruit.id}>{fruit.name}</p>
+            </template>
+        <lightning-button label="Uppercase Fruits" onclick={uppercaseFruits} class="slds-m-top_small"></lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
