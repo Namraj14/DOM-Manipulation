@@ -126,3 +126,17 @@ input.focus();
 const btn = this.template.querySelector('button');
 btn.click();
 ```
+
+| Method                  | Description                                           |
+| ----------------------- | ----------------------------------------------------- |
+| `toLowerCase()`         | Converts string to lowercase                          |
+| `toUpperCase()`         | Converts string to uppercase                          |
+| `trim()`                | Removes whitespace from both ends                     |
+| `slice(start, end)`     | Extracts part of the string                           |
+| `substring(start, end)` | Similar to slice, but doesn't accept negative indexes |
+| `includes(str)`         | Returns `true` if `str` is found inside string        |
+| `startsWith(str)`       | Checks if string starts with given value              |
+| `endsWith(str)`         | Checks if string ends with given value                |
+| `replace(old, new)`     | Replaces part of the string                           |
+| `split(delimiter)`      | Splits string into an array                           |
+| `charAt(index)`         | Gets character at a position                          |
